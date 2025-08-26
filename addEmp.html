@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Employee</title>
+    <!-- Tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+
+    <div class="w-full flex justify-end pt-1 bg-gray-50">
+        <a href="./login.html">
+            <button type="button"
+                class="text-white bg-red-400 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30 me-2 mb-2">
+                <img class="pr-1" src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_640.png" alt=""
+                    width="30px">
+                Logout
+            </button>
+        </a>
+    </div>
+    <div class=" h-screen flex ">
+        <div class="w-1/2 ml-20">
+
+
+            <form class="max-w-md mx-auto py-5 border-5 rounded-lg !border-blue-1100 ">
+                <h2 class="text-center text-xl font-bold ">Add New Employee</h2>
+
+                <div class="px-10 mt-5">
+                    <div class="relative z-0 w-full mb-5 group">
+                        <input type="text" name="empid" id="empid"
+                            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-dark dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                            placeholder=" " required />
+                        <label for="empid"
+                            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Employee
+                            ID</label>
+                    </div>
+                    <div class="relative z-0 w-full mb-5 group">
+                        <input type="text" name="empname" id="empname"
+                            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-dark dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                            placeholder=" " required />
+                        <label for="empname"
+                            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Employee
+                            Name</label>
+                    </div>
+
+
+
+                    <div class="relative z-0 w-full mb-5 group">
+                        <input type="empdesti" name="empdesti" id="empdesti"
+                            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-dark dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                            placeholder=" " required />
+                        <label for="empdesti"
+                            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Employee
+                            Designation</label>
+                    </div>
+                    <div class="grid md:grid-cols-2 md:gap-6">
+                        <div class="relative z-0 w-full mb-5 group">
+                            <input type="text" name="empexp" id="empexp"
+                                class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-dark dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                placeholder=" " required />
+                            <label for="empexp"
+                                class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Employee
+                                Experience</label>
+                        </div>
+                        <div class="relative z-0 w-full mb-5 group">
+                            <input type="text" name="empsalary" id="empsalary"
+                                class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-dark dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                placeholder=" " required />
+                            <label for="floating_last_name"
+                                class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Employee
+                                Salary</label>
+                        </div>
+                    </div>
+
+                    <div class="relative z-0 w-full mb-5 group">
+                        <input type="tel" name="empmob" id="empmob"
+                            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-dark dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                            placeholder=" " required />
+                        <label for="empmob"
+                            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Employee
+                            Mob</label>
+                    </div>
+                    <div class="mb-5">
+                        <label for="empaddress"
+                            class="group block mb-2 text-sm  text-gray-900 dark:text-gray-400">Employee Address</label>
+                        <input type="text" id="empaddress"
+                            class="block w-full p-4 text-gray-900  border-b-2 border-gray-300  bg-gray-50 text-base focus:ring-blue-500 focus:border-blue-500 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-dark dark:focus:ring-blue-500 dark:focus:border-blue-300">
+                    </div>
+                    <h5 class="text-center text-lime-500 my-3" id="popup"></h5>
+
+                    <div class="flex justify-center pt-5 mb-0">
+                        <button type="button" onclick="addEmployee()"
+                            class="item-center text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-400 dark:hover:bg-blue-300 dark:focus:ring-blue-400">Submit</button>
+
+                    </div>
+
+
+                </div>
+            </form>
+        </div>
+        <div class="w-3/4">
+
+
+            <form class="max-w-md mx-auto mt-20">
+                <label for="default-search"
+                    class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                <div class="relative">
+                    <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                        </svg>
+                    </div>
+                    <input type="text" id="empsearch"
+                        class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Search Employee..." required />
+                    <button onclick="searchEmp(document.getElementById('empsearch').value)" type="button"
+                        class="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
+                </div>
+            </form>
+
+            <div id="searchresult" class="flex justify-center mt-20">
+                <div class="w-1/2 flex justify-between  p-4">
+                    <!-- Labels -->
+
+
+                    <!-- Results -->
+                    <ul id="result" class="flex justify-center space-y-2 text-gray-700">
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+        function searchEmp(empDetail) {
+            if (empDetail === "") {
+                alert("Please fill the search field")
+            }
+            else {
+
+
+                //   alert(`Employee Exist with id ${id}`)
+                if (JSON.parse(localStorage.getItem(`${empDetail}`))) {
+                    result.innerHTML = "";
+                    empObj = JSON.parse(localStorage.getItem(`${empDetail}`));
+                    let li = document.createElement('li');
+                    li.innerHTML = `<h1 class="border-b-2 mb-2 font-bold bg-lime-300 p-2">Employee Details</h1> <li class="mt-3 font-bold"> Employee Id = ${empObj.id}</li> <li class="font-bold">Employee Name = ${empObj.name}</li> <li class="font-bold">Employee Designation =${empObj.destina}</li> <li class="font-bold">Employee Experience = ${empObj.exp} Year Experience</li>`;
+                    result.appendChild(li);
+                    console.log(`${empObj.name}`);
+
+                }
+                else {
+                    result.innerHTML = "";
+
+                    let li = document.createElement('li');
+                    li.innerHTML = `<h1 class=" text-center mb-2 font-bold bg-red-300 p-2">❌ Not Exist</h1>`;
+                    result.appendChild(li);
+                }
+
+
+            }
+
+
+
+        }
+
+        function addEmployee() {
+            const empDetails = {
+                id: empid.value,
+                name: empname.value,
+                destina: empdesti.value,
+                mobile: empmob.value,
+                exp: empexp.value,
+                salary: empsalary.value,
+                add: empaddress.value
+            }
+            console.log(empDetails);
+            // function taskAdd()
+            // {
+
+            //     // alert(`your task ${task} added sucessfully`);
+            //     let li = document.createElement('li');
+            //     li.innerHTML=`<li>${empDetails.id}</li> <li>${empDetails.name}</li> <li>${empDetails.designation}</li> <li>${empDetails.exp}</li>`;
+            //     result.appendChild(li);
+
+            // }
+
+
+
+
+            if (JSON.parse(localStorage.getItem(`${empDetails.id}`))) {
+                alert("Employee is Already Exist")
+            }
+            else {
+
+                localStorage.setItem(`${empDetails.id}`, JSON.stringify(empDetails));
+                popup.innerHTML = "Employee Added Successfully";
+                setTimeout(() => {
+                    popup.innerHTML = "";
+                }, 2000);
+                empid.value = "";
+                empname.value = "";
+                empdesti.value = "";
+                empmob.value = "";
+                empexp.value = "";
+                sempsalary.value = "";
+                empaddress.value = "";
+                taskAdd();
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>

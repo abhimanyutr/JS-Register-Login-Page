@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <!-- Bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- Font Awosome  -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+<body>
+    <div class="d-flex justify-content-center mt-3">
+        <form>
+            <h1 class="mb-4 pb-3 pt-3">Register here..</h1>
+  <!-- 2 column grid layout with text inputs for the first and last names -->
+  <div class="row mb-2">
+    <div class="col">
+      <div data-mdb-input-init class="form-outline">
+        <label class="form-label" for="form3Example1">First name</label>
+        <input type="text" id="form3Example1" class="form-control" />
+        
+      </div>
+    </div>
+    <div class="col">
+      <div data-mdb-input-init class="form-outline">
+        <label class="form-label" for="form3Example2">Last name</label>
+        <input type="text" id="form3Example2" class="form-control" />
+        
+      </div>
+    </div>
+  </div>
+
+<!-- phone input -->
+  <div data-mdb-input-init class="form-outline mb-2">
+    <label class="form-label" for="form3Example3">Phone Number</label>
+    <input type="tel" id="form3Example3" class="form-control" />
+    
+  </div>
+
+  <!-- Email input -->
+  <div data-mdb-input-init class="form-outline mb-2">
+    <label class="form-label" for="form3Example4">Email address</label>
+    <input type="email" id="form3Example4" class="form-control" />
+    
+  </div>
+
+  <!-- Password input -->
+  <div data-mdb-input-init class="form-outline mb-2">
+     <label class="form-label" for="form3Example5">Password</label>
+    <input type="password" id="form3Example5" class="form-control" />
+   
+  </div>
+  <!--confirm Password input -->
+  <div data-mdb-input-init class="form-outline mb-4">
+     <label class="form-label" for="form3Example6">confirm Password</label>
+    <input type="password" id="form3Example6" class="form-control" />
+   
+  </div>
+
+
+  <!-- Submit button -->
+  <button onclick="register()" data-mdb-ripple-init type="button" class="btn btn-outline-warning text-center btn-block mb-4">Sign up</button>
+
+  <!-- Register buttons -->
+  <div class="text-center">
+    <p>or sign up with:</p>
+    <button data-mdb-ripple-init type="button" class="btn btn-secondary btn-floating mx-1">
+      <i class="fab fa-facebook-f"></i>
+    </button>
+
+    <button data-mdb-ripple-init type="button" class="btn btn-secondary btn-floating mx-1">
+      <i class="fab fa-google"></i>
+    </button>
+
+    <button data-mdb-ripple-init type="button" class="btn btn-secondary btn-floating mx-1">
+      <i class="fab fa-twitter"></i>
+    </button>
+
+    <button data-mdb-ripple-init type="button" class="btn btn-secondary btn-floating mx-1">
+      <i class="fab fa-github"></i>
+    </button>
+  </div>
+</form>
+    </div>
+
+<script>
+    function register()
+    {
+        const data={
+            name:form3Example1.value,
+            lname:form3Example2.value,
+            ph:form3Example3.value,
+            email:form3Example4.value,
+            pass:form3Example5.value,
+            confpass:form3Example6.value
+        }
+        console.log(data);
+        
+    //    to store into localStorage
+      localStorage.setItem("Details",JSON.stringify(data));  
+      if(data.name=="" || data.lname=="" || data.ph=="" || data.email=="" || data.pass=="" || data.confpass=="")
+      {
+        alert("Please fill the form")
+      }
+      else
+      {
+        alert("Registration Successfull");
+        window.location.href="login.html"
+      }
+        
+    }
+    // console.log(userDetails);
+</script>
+    
+
+<!-- Bootstrap 5 Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-..." crossorigin="anonymous"></script>
+</body>
+</html>
